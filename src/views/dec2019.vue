@@ -266,7 +266,7 @@ body .dec19 {
     z-index: -1;
     text-align: justify;
     text-transform: uppercase;
-    top: 40%;
+    top: 60%;
     bottom: 0;
     text-align: justify;
     width: 94%;

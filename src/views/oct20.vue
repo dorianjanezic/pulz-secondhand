@@ -280,7 +280,7 @@ body .oct20 {
     z-index: -1;
     text-align: justify;
     text-transform: uppercase;
-    top: 40%;
+    top: 60%;
     bottom: 0;
     text-align: justify;
     width: 94%;
@@ -303,7 +303,7 @@ body .oct20 {
     font-size: 84px;
     bottom: -410%;
     left: 0;
-    padding-top: 40vh !important;
+    padding-top: 80vh !important;
   }
 
   .date-link {
