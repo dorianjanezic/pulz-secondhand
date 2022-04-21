@@ -18,9 +18,6 @@
       :style="{ bottom: isActive ? height_text + 'px' : '20px' }"
       :class="[{ slidein: isActive }, { collectiontext: !isActive }]"
     >
-      The myth of the tortured artist stretches back to ancient times. Optimum
-      creativity, we are often told, can only emerge under stressful and adverse
-      conditions. Struggle is intrinsic to the production of great art.
       <div style="margin-top: 50px; width: 100%">
         <div>FOTO: Bernarda Conič</div>
         <div>MUA: Laura Butkovič</div>

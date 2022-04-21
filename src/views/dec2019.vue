@@ -15,12 +15,9 @@
       />
     </div>
     <div
-      :style="{ bottom: isActive ? height_text + 'px' : '20px' }"
+      :style="{ bottom: isActive ? height_text + 'px' : '2vh' }"
       :class="[{ slidein: isActive }, { collectiontext: !isActive }]"
     >
-      The myth of the tortured artist stretches back to ancient times. Optimum
-      creativity, we are often told, can only emerge under stressful and adverse
-      conditions. Struggle is intrinsic to the production of great art.
       <div style="margin-top: 50px; width: 100%">
         <div>FOTO: Valentina Jarc</div>
         <div>MUA: Laura Butkovič</div>
@@ -73,6 +70,7 @@ export default {
   },
   methods: {
     onScroll() {
+      console.log(window.innerHeight - 180);
       window.addEventListener("scroll", () => {
         const scrolled = window.scrollY;
         this.height =

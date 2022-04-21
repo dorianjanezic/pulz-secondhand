@@ -1,5 +1,5 @@
 <template>
-  <div class="main-wr-right-sub">
+  <div class="main-wr-right-sub" ref="mainbox">
     <div class="collections" v-for="photo in photos" :key="photo">
       <img class="photosoct2 fade-in" id="photo" :src="photo"/>
     </div>
@@ -42,7 +42,6 @@ export default {
           typeof(fadeInElements[i])
           var first = fadeInElements[0]
           var elem = fadeInElements[i];
-          console.log(first);
           first.style.opacity = "1"
           if (isElemVisible(elem)) {
             elem.style.opacity = "1";

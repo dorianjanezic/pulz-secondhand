@@ -37,8 +37,6 @@ export default {
     onMounted(() => {
       const isElemVisible = (el) => {
         var rect = el.getBoundingClientRect();
-        console.log(rect.top);
-        console.log(window.innerHeight);
         var elemTop = rect.top + 10; // 200 = buffer
         var elemBottom = rect.bottom;
         return elemTop < window.innerHeight - 100 && elemBottom >= 0;

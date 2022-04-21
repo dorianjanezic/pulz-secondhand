@@ -18,9 +18,7 @@
       :style="{ bottom: isActive ? height_text + 'px' : '20px' }"
       :class="[{ slidein: isActive }, { collectiontext: !isActive }]"
     >
-      The myth of the tortured artist stretches back to ancient times. Optimum
-      creativity, we are often told, can only emerge under stressful and adverse
-      conditions. Struggle is intrinsic to the production of great art.
+     genderless
       <div style="margin-top: 50px; width: 100%">
         <div>FOTO:FUGA</div>
         <div>MUA: Marta Šporin</div>
@@ -95,7 +93,6 @@ export default {
           scrolled > this.height - window.innerHeight - 180
         ) {
           this.scrolled1 = window.scrollY;
-          console.log(this.scrolled1);
           this.height_text = -this.height + window.innerHeight + 200;
           this.isActive = true;
         } else {
