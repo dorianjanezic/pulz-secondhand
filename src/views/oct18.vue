@@ -255,11 +255,12 @@ body .oct18 {
     margin-top: 0 !important;
     line-height: 1;
     padding: 0 !important;
+    font-size: 84px;
   }
 
   .collectiontext {
     padding: 0 10px;
-    font-size: 15px;
+    font-size: 16px;
     position: absolute !important;
     z-index: -1;
     text-align: justify;

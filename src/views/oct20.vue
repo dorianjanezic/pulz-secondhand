@@ -157,6 +157,7 @@ div.main-wr-left {
   margin-top: 12vh;
   transition: all 0.8s ease-out;
   cursor: pointer;
+  font-size: 84px;
 }
 
 .collectiontext {
@@ -275,7 +276,7 @@ body .oct20 {
 
   .collectiontext {
     padding: 0 10px;
-    font-size: 15px;
+    font-size: 16px;
     position: absolute !important;
     z-index: -1;
     text-align: justify;

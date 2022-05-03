@@ -49,6 +49,14 @@ export default {
     this.isScrolledApr = false;
   },
   mounted() {
+    this.height =
+          Math.max(
+            document.body.scrollHeight,
+            document.body.offsetHeight,
+            document.documentElement.clientHeight,
+            document.documentElement.scrollHeight,
+            document.documentElement.offsetHeight
+          ) - window.innerHeight;
     this.onScroll();
     this.moveTo();
   },
@@ -70,7 +78,7 @@ export default {
   },
   methods: {
     onScroll() {
-      console.log(window.innerHeight - 180);
+      // console.log(window.innerHeight - 180);
       window.addEventListener("scroll", () => {
         const scrolled = window.scrollY;
         this.height =
@@ -92,6 +100,24 @@ export default {
           this.isActive = false;
         }
       });
+
+      setTimeout(function(){
+   console.log( Math.max(
+            document.body.scrollHeight,
+            document.body.offsetHeight,
+            document.documentElement.clientHeight,
+            document.documentElement.scrollHeight,
+            document.documentElement.offsetHeight
+          ) - window.innerHeight)
+}, 100);
+      console.log( Math.max(
+            document.body.scrollHeight,
+            document.body.offsetHeight,
+            document.documentElement.clientHeight,
+            document.documentElement.scrollHeight,
+            document.documentElement.offsetHeight
+          ) - window.innerHeight)
+          console.log(this.height);
     },
     moveTo() {
       window.scroll({
@@ -257,11 +283,12 @@ body .dec19 {
     margin-top: 0 !important;
     line-height: 1;
     padding: 0 !important;
+    font-size: 84px;
   }
 
   .collectiontext {
     padding: 0 10px;
-    font-size: 15px;
+    font-size: 16px;
     position: absolute !important;
     z-index: -1;
     text-align: justify;

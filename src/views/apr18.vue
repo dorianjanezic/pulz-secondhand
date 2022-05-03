@@ -256,11 +256,12 @@ body .apr18 {
     line-height: 1;
     padding: 0 !important;
       cursor: pointer;
+      font-size: 180px;
   }
 
   .collectiontext {
     padding: 0 10px;
-    font-size: 15px;
+    font-size: 16px;
     position: absolute !important;
     z-index: -1;
     text-align: justify;

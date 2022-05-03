@@ -18,6 +18,7 @@
         <div @click="goToRoute(index)" class="circle" href="/#/okt20"></div>
       </div>
     </div>
+    <div style="height:100%; display:flex; flex-direction:column; justify-content: space-between">
     <div class="desc">
       What is Pulz? It’s a feeling, a pulsation, a vibration and a beat. It’s an
       idea of connection – to oneself, to our past and to the future. Pulz is a
@@ -42,15 +43,16 @@
         >
       </div>
       <div class="contact">
-        <div>HELLO@PULZSHOP.COM</div>
-        <div>070 559 196</div>
+        <a class="contact-links" href="mailto:hello@pulzshop.com">HELLO@PULZSHOP.COM</a>
+        <a href="tel:+38670559196" class="contact-links">070 559 196</a>
       </div>
-      <div class="contact" style="padding-bottom: 3vh">
+      <div class="contact">
         <div>TAVČARJEVA</div>
         <div>ULICA</div>
         <div>11</div>
         <div>LJUBLJANA</div>
       </div>
+    </div>
     </div>
   </div>
 </template>
@@ -180,20 +182,28 @@ export default {
 .desc {
   text-transform: uppercase;
   text-align: justify;
-  margin-bottom: 16.5vw;
+  margin-bottom: 35.5vh;
   font-size: 1.2vw;
   line-height: 1.3;
+  padding-top:15px
 }
 
+
+.contact-wr {
+  margin-bottom:20px;
+}
 .contact {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   bottom: 0;
-  margin-bottom: 14vh;
   font-size: 1.2vw;
   line-height: 1;
   text-decoration: none;
+}
+
+.contact:not(:last-child) {
+ margin-bottom: 14vh;
 }
 
 .contact-links {
