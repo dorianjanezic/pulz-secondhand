@@ -157,7 +157,7 @@ div.main-wr-left {
   margin-top: 12vh;
   transition: all 0.8s ease-out;
   cursor: pointer;
-  font-size: 84px;
+  font-size: 180px;
 }
 
 .collectiontext {
@@ -272,6 +272,7 @@ body .oct20 {
     margin-top: 0 !important;
     line-height: 1;
     padding: 0 !important;
+    font-size: 84px;
   }
 
   .collectiontext {
