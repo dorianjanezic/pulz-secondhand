@@ -141,6 +141,7 @@ div.main-wr-left {
   margin-top: 12vh;
   transition: all 0.8s ease-out;
   cursor: pointer;
+  font-size: 180px;
 }
 
 .collectiontext {
@@ -256,7 +257,7 @@ body .apr18 {
     line-height: 1;
     padding: 0 !important;
       cursor: pointer;
-      font-size: 180px;
+      font-size: 84px;
   }
 
   .collectiontext {

@@ -235,6 +235,14 @@ export default {
     width: 94%;
   }
 
+  .contact:not(:last-child) {
+    margin-bottom: 26vw;
+}
+
+.contact-wr {
+  margin-bottom: 0;
+}
+
   .second-hand {
     width: 100%;
     display: flex;
@@ -268,9 +276,9 @@ export default {
   }
 
   .contact {
-    padding: 5vh 12px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: 2vh;
+    padding: 0vh 12px;
   }
 
   /* .fade-in {

@@ -51,6 +51,12 @@ export default {
 }
 
 @media (max-width: 450px) {
+.wrapper {
+  position: unset;
+  width: 100%;
+}
+
+
   .main-wr {
     display: block;
   }
@@ -62,8 +68,8 @@ export default {
     height: 120vw;
     position: relative;
     width: 94%;
-    top: 3vw;
-    left: 0;
+    left: 10px;
+    top: 10px;
   }
 
   .second-hand-logo {
@@ -71,13 +77,12 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 44px;
+    font-size: 48px;
     position: relative;
     top: 84%;
-    margin-bottom: 10vw;
-    margin-top: 4vw;
-    /* padding: 0 20px; */
-    left: 3vw;
+    margin-bottom: 5vw;
+    margin-top: 13vw;
+    left: 10px;
   }
 }
 </style>
