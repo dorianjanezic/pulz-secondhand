@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <SubGalleryDec19
+    <SubGalleryDec19 id="subbb"
       ref="height"
       date1="APR18"
       date2="OCT18"
@@ -49,17 +49,19 @@ export default {
     this.isScrolledApr = false;
   },
   mounted() {
-    this.height =
-          Math.max(
-            document.body.scrollHeight,
-            document.body.offsetHeight,
-            document.documentElement.clientHeight,
-            document.documentElement.scrollHeight,
-            document.documentElement.offsetHeight
-          ) - window.innerHeight;
     this.onScroll();
     this.moveTo();
-  },
+    // var body = document.body,
+    // html = document.documentElement;
+
+// var height = Math.max( body.scrollHeight, body.offsetHeight, 
+//                        html.clientHeight, html.scrollHeight, html.offsetHeight );
+//   console.log(height);
+
+//   var offsetHeight = document.getElementById('subbb').offsetHeight
+//   console.log(offsetHeight)
+},
+
   data() {
     return {
       isScrolledApr: false,
@@ -89,35 +91,19 @@ export default {
             document.documentElement.scrollHeight,
             document.documentElement.offsetHeight
           ) - window.innerHeight;
+          console.log(this.height);
+          console.log(window.innerHeight)
         if (
           scrolled > 3000 &&
-          scrolled > this.height - window.innerHeight - 180
+          scrolled > this.height - window.innerHeight - 40
         ) {
           this.scrolled1 = window.scrollY;
-          this.height_text = -this.height + window.innerHeight + 200;
+          this.height_text = -this.height + window.innerHeight + 60;
           this.isActive = true;
         } else {
           this.isActive = false;
         }
       });
-
-      setTimeout(function(){
-   console.log( Math.max(
-            document.body.scrollHeight,
-            document.body.offsetHeight,
-            document.documentElement.clientHeight,
-            document.documentElement.scrollHeight,
-            document.documentElement.offsetHeight
-          ) - window.innerHeight)
-}, 100);
-      console.log( Math.max(
-            document.body.scrollHeight,
-            document.body.offsetHeight,
-            document.documentElement.clientHeight,
-            document.documentElement.scrollHeight,
-            document.documentElement.offsetHeight
-          ) - window.innerHeight)
-          console.log(this.height);
     },
     moveTo() {
       window.scroll({
@@ -278,6 +264,21 @@ body .dec19 {
     width: 55px;
     right: 15px;
   }
+
+    .slidein {
+    padding: 0 10px;
+    font-size: 16px;
+    position: absolute !important;
+    z-index: -1;
+    text-align: justify;
+    text-transform: uppercase;
+    top: 60%;
+    bottom: 0;
+    text-align: justify;
+    width: 94%;
+    padding: 0 !important;
+    left: 10px;
+}
 
   .collection-name {
     margin-top: 0 !important;

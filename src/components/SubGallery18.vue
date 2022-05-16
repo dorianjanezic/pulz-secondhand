@@ -125,10 +125,10 @@ export default {
 }
 
 .collections-link {
-  padding-top: 30vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-size: 180px;
   position: absolute;
   left: 30px;
@@ -161,6 +161,8 @@ export default {
     padding: 0 10px;
     display: grid;
     position: unset;
+        height: 0;
+    justify-content: left;
   }
 
   .date-link {

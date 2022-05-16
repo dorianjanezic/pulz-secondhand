@@ -81,10 +81,10 @@ export default {
           ) - window.innerHeight;
         if (
           scrolled > 3000 &&
-          scrolled > this.height - window.innerHeight - 180
+          scrolled > this.height - window.innerHeight - 40
         ) {
           this.scrolled1 = window.scrollY;
-          this.height_text = -this.height + window.innerHeight + 200;
+          this.height_text = -this.height + window.innerHeight + 60;
           this.isActive = true;
         } else {
           this.isActive = false;
@@ -180,7 +180,7 @@ div.main-wr-left {
   position: absolute;
   left: 10px;
   padding-top: 542px;
-  font-size: 180px;
+  /* font-size: 10vw; */
   /* bottom: -260vw; */
   cursor: pointer;
   display: grid;
@@ -274,6 +274,21 @@ body .apr18 {
     padding: 0 !important;
     left: 10px;
   }
+
+    .slidein {
+    padding: 0 10px;
+    font-size: 16px;
+    position: absolute !important;
+    z-index: -1;
+    text-align: justify;
+    text-transform: uppercase;
+    top: 60%;
+    bottom: 0;
+    text-align: justify;
+    width: 94%;
+    padding: 0 !important;
+    left: 10px;
+}
 
   .collections-creds {
     position: absolute !important;

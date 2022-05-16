@@ -1,5 +1,5 @@
 <template>
-  <div class="main-wr-right-sub" ref="mainbox">
+  <div class="main-wr-right-sub" id="righ" ref="mainbox">
     <div class="collections" v-for="photo in photos" :key="photo">
       <img class="photosoct2 fade-in" id="photo" :src="photo"/>
     </div>
@@ -110,6 +110,7 @@ export default {
   float: right;
   position: absolute;
   width: 100%;
+  height: fit-content;
   margin-top: 120px;
   right: 20px;
   z-index: -1;
@@ -138,10 +139,10 @@ export default {
 }
 
 .collections-link {
-  padding-top: 50vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-size: 180px;
   position: absolute;
   left: 30px;
@@ -174,6 +175,8 @@ export default {
     padding: 0 10px;
     display: grid;
     position: unset;
+        height: 0;
+    justify-content: left;
   }
 
   .date-link {
