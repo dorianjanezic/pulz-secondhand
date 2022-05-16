@@ -4,7 +4,6 @@ import oct20 from '../views/oct20.vue'
 import apr18 from '../views/apr18.vue'
 import oct18 from '../views/oct18.vue'
 import dec2019 from '../views/dec2019.vue'
-import Test from '../views/Test.vue'
 
 
 const routes = [{
