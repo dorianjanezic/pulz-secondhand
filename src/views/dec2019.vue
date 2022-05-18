@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <SubGalleryDec19 id="subbb"
+    <SubGalleryDec19
       ref="height"
       date1="APR18"
       date2="OCT18"
@@ -251,7 +251,7 @@ body .dec19 {
     margin-left: 0;
   }
 
-  .second-hand-sub-apr {
+  .second-hand-sub-oct18 {
     position: fixed;
     font-size: 75px;
     left: 10px;

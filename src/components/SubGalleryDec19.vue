@@ -1,10 +1,10 @@
 <template>
-  <div class="main-wr-right-sub" id="righ" ref="mainbox">
+  <div class="main-wr-right-sub">
     <div class="collections" v-for="photo in photos" :key="photo">
-      <img class="photosoct2 fade-in" id="photo" :src="photo"/>
+      <img class="photosoct2 fade-in" id="photo" :src="photo" />
     </div>
     <div class="collections-link">
-      <div class="date-link" @click="this.$router.push({ name: date1 })">
+      <div class="date-link apr18" @click="this.$router.push({ name: date1 })">
         {{ date1 }}
       </div>
       <div class="date-link" @click="this.$router.push({ name: date2 })">
@@ -32,17 +32,18 @@ export default {
     onMounted(() => {
       const isElemVisible = (el) => {
         var rect = el.getBoundingClientRect();
-        var elemTop = rect.top + 100; // 200 = buffer
+        var elemTop = rect.top + 10; // 200 = buffer
         var elemBottom = rect.bottom;
-        return elemTop < window.innerHeight && elemBottom >= 0;
+        return elemTop < window.innerHeight - 100 && elemBottom >= 0;
       };
 
       const handleScroll = () => {
         for (var i = 0; i < fadeInElements.length; i++) {
-          typeof(fadeInElements[i])
-          var first = fadeInElements[0]
+          typeof fadeInElements[i];
+          var first = fadeInElements[0];
           var elem = fadeInElements[i];
-          first.style.opacity = "1"
+          // console.log(first);
+          first.style.opacity = "1";
           if (isElemVisible(elem)) {
             elem.style.opacity = "1";
             fadeInElements.splice(i, 1); // only allow it to run once
@@ -50,27 +51,15 @@ export default {
         }
       };
       fadeInElements = Array.from(document.getElementsByClassName("fade-in"));
-      fadeInElements[0].style.opacity = "1"
+      fadeInElements[0].style.opacity = "1";
 
-      fadeInElements[0].classList.remove('fade-in')
-      
-      //  let lastphoto = fadeInElements[fadeInElements.length -1];
-      //  lastphoto.style.paddingBottom = "100vh";
+      fadeInElements[0].classList.remove("fade-in");
       window.addEventListener("scroll", () => {});
-
-      //  let rect = lastphoto.getBoundingClientRect()
-      //  console.log(rect.y);
-      //  let height = document.getElementsByClassName("collections")
-      //  console.log(height.scrollHeight);
-      //  var limit = document.body.offsetHeight - window.innerHeight;
-
-      //  console.log(document.body.scrollHeight);
       document.addEventListener("scroll", handleScroll);
       handleScroll();
     });
 
     onUnmounted(() => {
-      // document.removeEventListener('scroll', handleScroll)
     });
   },
   name: "LandingGallery",
@@ -110,7 +99,6 @@ export default {
   float: right;
   position: absolute;
   width: 100%;
-  height: fit-content;
   margin-top: 120px;
   right: 20px;
   z-index: -1;
@@ -154,6 +142,11 @@ export default {
   line-height: 0.87;
 }
 
+.apr18 {
+ left: 5px; 
+ position: relative
+}
+
 @media (max-width: 450px) {
   .main-wr-right-sub {
     display: flex;
@@ -185,5 +178,9 @@ export default {
   .collections {
     display: unset;
   }
+
+  .apr18 {
+ left: 2px;
+}
 }
 </style>
