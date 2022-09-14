@@ -19,13 +19,15 @@
       :class="[{ slidein: isActive }, { collectiontext: !isActive }]"
     >
       <div style="margin-top: 50px; width: 100%">
-        <div>FOTO: Valentina Jarc</div>
-        <div>MUA: Laura Butkovič</div>
-        <div>STYLING: Lovro Lukić</div>
+        <div>FOTO: Andraž Fijavž Bačovnik</div>
+        <div>MUA: Nina Burazor</div>
+        <div>STYLING: Sari Valenci</div>
         <div style="width: inherit">
-          Models: Zala Maja Ravnihar,<br />
-          Nina Butkovič, Damjan Aškerc Juković, Lovro Lukić
+          Models: Eva Rogl Mežnar, Lan Breški
         </div>
+        <div>Clothes by Pulz</div>
+        <div>Accessories by Yelewery and Pulz</div>
+        
       </div>
     </div>
     <SubGallerySep22
