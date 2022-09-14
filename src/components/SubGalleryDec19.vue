@@ -13,6 +13,9 @@
       <div class="date-link" @click="this.$router.push({ name: date3 })">
         {{ date3 }}
       </div>
+      <div class="date-link" @click="this.$router.push({ name: date4 })">
+        {{ date4 }}
+      </div>
     </div>
   </div>
 </template>
@@ -59,20 +62,12 @@ export default {
       handleScroll();
     });
 
-    onUnmounted(() => {
-    });
+    onUnmounted(() => {});
   },
   name: "LandingGallery",
   data() {
     return {
-      photos: [
-        dec19_1,
-        dec19_2,
-        dec19_3,
-        dec19_4,
-        dec19_5,
-        dec19_6,
-      ],
+      photos: [dec19_1, dec19_2, dec19_3, dec19_4, dec19_5, dec19_6],
     };
   },
   mounted() {
@@ -90,7 +85,7 @@ export default {
       return this.arr;
     },
   },
-  props: ["date1", "date2", "date3"],
+  props: ["date1", "date2", "date3", "date4"],
 };
 </script>
 
@@ -143,8 +138,8 @@ export default {
 }
 
 .apr18 {
- left: 5px; 
- position: relative
+  left: 5px;
+  position: relative;
 }
 
 @media (max-width: 450px) {
@@ -152,7 +147,7 @@ export default {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 547px;
+    top: 70%;
     right: 0 !important;
   }
 
@@ -168,7 +163,7 @@ export default {
     padding: 0 10px;
     display: grid;
     position: unset;
-        height: 0;
+    height: 0;
     justify-content: left;
   }
 
@@ -180,7 +175,7 @@ export default {
   }
 
   .apr18 {
- left: 2px;
-}
+    left: 2px;
+  }
 }
 </style>

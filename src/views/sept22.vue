@@ -6,7 +6,7 @@
         :style="{ marginTop: isActive ? 60 + 'px' : '120px' }"
         @click="moveTo()"
       >
-        DEC19
+        SEP22
       </div>
       <img
         src="@/assets/X_desktop.svg"
@@ -28,22 +28,22 @@
         </div>
       </div>
     </div>
-    <SubGalleryDec19
+    <SubGallerySep22
       ref="height"
       date1="APR18"
       date2="OCT18"
-      date3="OCT20"
-      date4="SEP22"
-    ></SubGalleryDec19>
+      date3="DEC19"
+      date4="OCT20"
+    ></SubGallerySep22>
   </div>
 </template>
 <script>
-import SubGalleryDec19 from "@/components/SubGalleryDec19.vue";
+import SubGallerySep22 from "@/components/SubGallerySep22.vue";
 
 export default {
   name: "HomeView",
   components: {
-    SubGalleryDec19,
+    SubGallerySep22,
   },
   beforeCreate() {
     document.body.className = "dec19";

@@ -59,6 +59,7 @@
 
 <script>
 var fadeInElements = [];
+import sep22 from "@/assets/LandingPagePhotos/sep_22.jpg";
 import okt20 from "@/assets/LandingPagePhotos/okt_20.jpg";
 import okt18 from "@/assets/LandingPagePhotos/okt_18.jpg";
 import dec19 from "@/assets/LandingPagePhotos/dec_19.jpg";
@@ -99,8 +100,8 @@ export default {
   name: "LandingGallery",
   data() {
     return {
-      photos: [okt20, okt18, dec19, apr18],
-      routes: ["OCT20", "OCT18", "DEC19", "APR18"],
+      photos: [sep22, okt20, okt18, dec19, apr18],
+      routes: ["SEP22", "OCT20", "OCT18", "DEC19", "APR18"],
       arr: [],
       animationName: undefined,
     };
@@ -255,7 +256,7 @@ export default {
   }
 
   .desc {
-    margin-bottom: 33vh;
+    margin-bottom: 35vh;
     padding: 0 12px;
     font-size: 2vh;
   }

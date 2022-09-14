@@ -33,6 +33,7 @@
       date1="APR18"
       date2="OCT18"
       date3="DEC19"
+      DATE4="SEP22"
     ></SubGalleryOct20>
   </div>
 </template>

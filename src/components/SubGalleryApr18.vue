@@ -13,6 +13,9 @@
       <div class="date-link" @click="this.$router.push({ name: date3 })">
         {{ date3 }}
       </div>
+      <div class="date-link" @click="this.$router.push({ name: date4 })">
+        {{ date4 }}
+      </div>
     </div>
   </div>
 </template>
@@ -86,7 +89,7 @@ export default {
       return this.arr;
     },
   },
-  props: ["date1", "date2", "date3"],
+  props: ["date1", "date2", "date3", "date4"],
 };
 </script>
 
@@ -143,7 +146,7 @@ export default {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 547px;
+    top: 70%;
     right: 0 !important;
   }
 

@@ -23,17 +23,17 @@
 <script>
 var fadeInElements = [];
 
-import okt20_1 from "@/assets/okt20/okt20_1.jpg";
-import okt20_2 from "@/assets/okt20/okt20_2.jpg";
-import okt20_3 from "@/assets/okt20/okt20_3.jpg";
-import okt20_4 from "@/assets/okt20/okt20_4.jpg";
-import okt20_5 from "@/assets/okt20/okt20_5.jpg";
-import okt20_6 from "@/assets/okt20/okt20_6.jpg";
-import okt20_7 from "@/assets/okt20/okt20_7.jpg";
-import okt20_8 from "@/assets/okt20/okt20_8.jpg";
-import okt20_9 from "@/assets/okt20/okt20_9.jpg";
-import okt20_10 from "@/assets/okt20/okt20_10.jpg";
-import okt20_11 from "@/assets/okt20/okt20_11.jpg";
+import sep22_1 from "@/assets/sep22/sep22_1.jpg";
+import sep22_2 from "@/assets/sep22/sep22_2.jpg";
+import sep22_3 from "@/assets/sep22/sep22_3.jpg";
+import sep22_4 from "@/assets/sep22/sep22_4.jpg";
+import sep22_5 from "@/assets/sep22/sep22_5.jpg";
+import sep22_6 from "@/assets/sep22/sep22_6.jpg";
+import sep22_7 from "@/assets/sep22/sep22_7.jpg";
+import sep22_8 from "@/assets/sep22/sep22_8.jpg";
+import sep22_9 from "@/assets/sep22/sep22_9.jpg";
+import sep22_10 from "@/assets/sep22/sep22_10.jpg";
+import sep22_11 from "@/assets/sep22/sep22_11.jpg";
 import { onMounted, onUnmounted } from "vue";
 export default {
   setup() {
@@ -67,24 +67,23 @@ export default {
       handleScroll();
     });
 
-    onUnmounted(() => {
-    });
+    onUnmounted(() => {});
   },
   name: "LandingGallery",
   data() {
     return {
       photos: [
-        okt20_1,
-        okt20_2,
-        okt20_3,
-        okt20_4,
-        okt20_5,
-        okt20_6,
-        okt20_7,
-        okt20_8,
-        okt20_9,
-        okt20_10,
-        okt20_11,
+        sep22_1,
+        sep22_2,
+        sep22_3,
+        sep22_4,
+        sep22_5,
+        sep22_6,
+        sep22_7,
+        sep22_8,
+        sep22_9,
+        sep22_10,
+        sep22_11,
       ],
     };
   },
@@ -156,8 +155,8 @@ export default {
 }
 
 .apr18 {
- left: 5px; 
- position: relative
+  left: 5px;
+  position: relative;
 }
 
 @media (max-width: 450px) {
@@ -181,7 +180,7 @@ export default {
     padding: 0 10px;
     display: grid;
     position: unset;
-        height: 0;
+    height: 0;
     justify-content: left;
   }
 
@@ -193,7 +192,7 @@ export default {
   }
 
   .apr18 {
- left: 2px;
-}
+    left: 2px;
+  }
 }
 </style>
