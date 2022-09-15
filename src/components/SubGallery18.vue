@@ -62,12 +62,22 @@ export default {
     onUnmounted(() => {});
   },
   name: "LandingGallery",
-    mounted () {
-   this.randomize(this.photos);
+  mounted() {
+    this.randomize(this.photos);
   },
   data() {
     return {
-      photos: [okt18_1, okt18_2, okt18_3, okt18_4, okt18_5, okt18_6, okt18_7, okt18_8, okt18_9],
+      photos: [
+        okt18_1,
+        okt18_2,
+        okt18_3,
+        okt18_4,
+        okt18_5,
+        okt18_6,
+        okt18_7,
+        okt18_8,
+        okt18_9,
+      ],
     };
   },
   methods: {
@@ -132,10 +142,10 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  font-size: 180px;
+  font-size: 10vw;
   position: absolute;
   left: 30px;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .date-link {
@@ -144,7 +154,7 @@ export default {
 }
 
 @media (max-width: 450px) {
-   .main-wr-right-sub {
+  .main-wr-right-sub {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -164,7 +174,7 @@ export default {
     padding: 0 10px;
     display: grid;
     position: unset;
-        height: 0;
+    height: 0;
     justify-content: left;
   }
 

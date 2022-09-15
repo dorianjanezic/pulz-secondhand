@@ -122,9 +122,9 @@ div.main-wr-left {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 180px;
+  font-size: 10vw;
   position: fixed;
-  left: 7px;
+  left: 10px;
 }
 
 .slidein {

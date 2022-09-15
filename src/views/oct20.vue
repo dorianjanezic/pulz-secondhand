@@ -33,7 +33,7 @@
       date1="APR18"
       date2="OCT18"
       date3="DEC19"
-      DATE4="SEP22"
+      date4="SEP22"
     ></SubGalleryOct20>
   </div>
 </template>
@@ -138,7 +138,7 @@ div.main-wr-left {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 180px;
+  font-size: 10vw;
   position: fixed;
   left: 10px;
 }
@@ -158,7 +158,7 @@ div.main-wr-left {
   margin-top: 12vh;
   transition: all 0.8s ease-out;
   cursor: pointer;
-  font-size: 180px;
+  font-size: 10vw;
 }
 
 .collectiontext {

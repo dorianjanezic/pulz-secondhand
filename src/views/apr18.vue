@@ -122,7 +122,7 @@ div.main-wr-left {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 180px;
+  font-size: 10vw;
   position: fixed;
   left: 20px;
 }
@@ -142,7 +142,8 @@ div.main-wr-left {
   margin-top: 12vh;
   transition: all 0.8s ease-out;
   cursor: pointer;
-  font-size: 180px;
+  font-size: 10vw;
+  margin-left: 5px;
 }
 
 .collectiontext {

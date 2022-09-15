@@ -143,7 +143,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  font-size: 180px;
+  font-size: 10vw;
   position: absolute;
   left: 30px;
   cursor: pointer;
