@@ -289,6 +289,7 @@ body .dec19 {
     line-height: 1;
     padding: 0 !important;
     font-size: 84px;
+    margin-left: 0;
   }
 
   .collectiontext {
