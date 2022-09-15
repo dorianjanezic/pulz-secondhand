@@ -143,7 +143,6 @@ div.main-wr-left {
   transition: all 0.8s ease-out;
   cursor: pointer;
   font-size: 10vw;
-  margin-left: 5px;
 }
 
 .collectiontext {
