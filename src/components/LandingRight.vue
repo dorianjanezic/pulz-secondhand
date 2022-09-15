@@ -5,54 +5,63 @@
       v-for="(photo, index) in photos"
       :key="photo"
     >
-        <img
-          class="photos fade-in"
-          @click="goToRoute(index)"
-          :src="photo"
-          :alt="photo"
-        />
+      <img
+        class="photos fade-in"
+        @click="goToRoute(index)"
+        :src="photo"
+        :alt="photo"
+      />
       <div class="collection-desc">
-          <div @click="goToRoute(index)" class="collection-date">
-            {{ photo.slice(5, 11).replace("_", "").toUpperCase() }}
-          </div>
+        <div @click="goToRoute(index)" class="collection-date">
+          {{ photo.slice(5, 11).replace("_", "").toUpperCase() }}
+        </div>
         <div @click="goToRoute(index)" class="circle" href="/#/okt20"></div>
       </div>
     </div>
-    <div style="height:100%; display:flex; flex-direction:column; justify-content: space-between">
-    <div class="desc">
-      What is Pulz? It’s a feeling, a pulsation, a vibration and a beat. It’s an
-      idea of connection – to oneself, to our past and to the future. Pulz is a
-      belief in the power of conscious and environmentally friendly living
-      through vintage clothes and everyday objects that carry history with them
-      and enrich our present. Pulz is also the understanding of healing power of
-      music and art alongside the one our local community has to offer. And
-      finally, Pulz is the tight friendship that happens spontaneously along the
-      way.
-    </div>
-    <div class="contact-wr">
-      <div class="contact">
-        <a
-          class="contact-links"
-          href="https://www.instagram.com/pulz_second_hand/"
-          >INSTAGRAM</a
-        >
-        <a
-          class="contact-links"
-          href="https://www.facebook.com/Pulz-Second-Hand-137809510209279s"
-          >FACEBOOK</a
-        >
+    <div
+      style="
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      "
+    >
+      <div class="desc">
+        What is Pulz? It’s a feeling, a pulsation, a vibration and a beat. It’s
+        an idea of connection – to oneself, to our past and to the future. Pulz
+        is a belief in the power of conscious and environmentally friendly
+        living through vintage clothes and everyday objects that carry history
+        with them and enrich our present. Pulz is also the understanding of
+        healing power of music and art alongside the one our local community has
+        to offer. And finally, Pulz is the tight friendship that happens
+        spontaneously along the way.
       </div>
-      <div class="contact">
-        <a class="contact-links" href="mailto:hello@pulzshop.com">HELLO@PULZSHOP.COM</a>
-        <a href="tel:+38670559196" class="contact-links">070 559 196</a>
+      <div class="contact-wr">
+        <div class="contact">
+          <a
+            class="contact-links"
+            href="https://www.instagram.com/pulz_second_hand/"
+            >INSTAGRAM</a
+          >
+          <a
+            class="contact-links"
+            href="https://www.facebook.com/Pulz-Second-Hand-137809510209279s"
+            >FACEBOOK</a
+          >
+        </div>
+        <div class="contact">
+          <a class="contact-links" href="mailto:hello@pulzshop.com"
+            >HELLO@PULZSHOP.COM</a
+          >
+          <a href="tel:+38670559196" class="contact-links">070 559 196</a>
+        </div>
+        <div class="contact">
+          <div>TAVČARJEVA</div>
+          <div>ULICA</div>
+          <div>11</div>
+          <div>LJUBLJANA</div>
+        </div>
       </div>
-      <div class="contact">
-        <div>TAVČARJEVA</div>
-        <div>ULICA</div>
-        <div>11</div>
-        <div>LJUBLJANA</div>
-      </div>
-    </div>
     </div>
   </div>
 </template>
@@ -100,7 +109,7 @@ export default {
   name: "LandingGallery",
   data() {
     return {
-      photos: [sep22, okt20, okt18, dec19, apr18],
+      photos: [sep22, okt20, dec19, okt18, apr18],
       routes: ["SEP22", "OCT20", "OCT18", "DEC19", "APR18"],
       arr: [],
       animationName: undefined,
@@ -116,7 +125,7 @@ export default {
   },
   methods: {
     goToRoute(item) {
-      this.$router.push({ name: this.routes[item]});
+      this.$router.push({ name: this.routes[item] });
     },
   },
 };
@@ -186,12 +195,11 @@ export default {
   margin-bottom: 35.5vh;
   font-size: 1.2vw;
   line-height: 1.3;
-  padding-top:15px
+  padding-top: 15px;
 }
 
-
 .contact-wr {
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 .contact {
   display: flex;
@@ -204,7 +212,7 @@ export default {
 }
 
 .contact:not(:last-child) {
- margin-bottom: 14vh;
+  margin-bottom: 14vh;
 }
 
 .contact-links {
@@ -238,11 +246,11 @@ export default {
 
   .contact:not(:last-child) {
     margin-bottom: 26vw;
-}
+  }
 
-.contact-wr {
-  margin-bottom: 0;
-}
+  .contact-wr {
+    margin-bottom: 0;
+  }
 
   .second-hand {
     width: 100%;
