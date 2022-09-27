@@ -110,7 +110,7 @@ export default {
   data() {
     return {
       photos: [sep22, okt20, dec19, okt18, apr18],
-      routes: ["SEP22", "OCT20", "OCT18", "DEC19", "APR18"],
+      routes: ["SEP22", "OCT20", "DEC19", "OCT18", "APR18"],
       arr: [],
       animationName: undefined,
     };
